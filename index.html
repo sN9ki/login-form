@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="pop-up hidden">
+            <div class="pop-up-content">
+                <span class="close-button">&times;</span>
+                <h2>Успіх</h2>
+                <p>Реєстрація пройшла успішно!</p>
+                <div class="user-name"></div>
+                <button type="button" class="close">Закрити</button>
+            </div>
+        </div>
+
+        <form action="" id="form">
+            <fieldset>
+                <legend>Особисті дані</legend>
+
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Прізвище:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label class="show-password" for="show-password">
+                    <input type="checkbox" id="show-password">
+                    Показати пароль
+                </label>
+            </fieldset>
+            <button type="submit">Надіслати</button>
+        </form>
+    </main>
+
+    <script src="alfabet/alfabet.js"></script>
+    <script src="alfabet/success-reg.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
